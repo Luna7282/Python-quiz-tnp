@@ -2,106 +2,57 @@ import random
 
 questions = [
     {
-        "question": "What is the capital of France?",
-        "choices": ["A. Paris", "B. London", "C. Rome", "D. Berlin"],
+        "question": "Which of the following is a primary key in a database?",
+        "choices": ["A. A unique identifier for a record", "B. A duplicate value", "C. A foreign key", "D. A column with NULL values"],
         "answer": "A"
     },
     {
-        "question": "What is 2 + 2?",
-        "choices": ["A. 3", "B. 4", "C. 5", "D. 6"],
+        "question": "What is the time complexity of binary search on a sorted array?",
+        "choices": ["A. O(n)", "B. O(log n)", "C. O(n^2)", "D. O(1)"],
         "answer": "B"
     },
     {
-        "question": "What is the largest planet in our solar system?",
-        "choices": ["A. Earth", "B. Mars", "C. Jupiter", "D. Saturn"],
-        "answer": "C"
-    },
-    {
-        "question": "Who wrote 'To Kill a Mockingbird'?",
-        "choices": ["A. Harper Lee", "B. J.K. Rowling", "C. Ernest Hemingway", "D. Mark Twain"],
-        "answer": "A"
-    },
-    {
-        "question": "What is the chemical symbol for water?",
-        "choices": ["A. H2O", "B. CO2", "C. O2", "D. H2"],
-        "answer": "A"
-    },
-    {
-        "question": "What is the speed of light?",
-        "choices": ["A. 300,000 km/s", "B. 150,000 km/s", "C. 450,000 km/s", "D. 600,000 km/s"],
-        "answer": "A"
-    },
-    {
-        "question": "Who painted the Mona Lisa?",
-        "choices": ["A. Vincent van Gogh", "B. Pablo Picasso", "C. Leonardo da Vinci", "D. Claude Monet"],
-        "answer": "C"
-    },
-    {
-        "question": "What is the smallest prime number?",
-        "choices": ["A. 0", "B. 1", "C. 2", "D. 3"],
-        "answer": "C"
-    },
-    {
-        "question": "What is the capital of Japan?",
-        "choices": ["A. Beijing", "B. Seoul", "C. Tokyo", "D. Bangkok"],
-        "answer": "C"
-    },
-    {
-        "question": "Who discovered penicillin?",
-        "choices": ["A. Marie Curie", "B. Alexander Fleming", "C. Louis Pasteur", "D. Isaac Newton"],
+        "question": "Which data structure is used for implementing recursion?",
+        "choices": ["A. Queue", "B. Stack", "C. Linked List", "D. Array"],
         "answer": "B"
     },
     {
-        "question": "What is the largest ocean on Earth?",
-        "choices": ["A. Atlantic Ocean", "B. Indian Ocean", "C. Arctic Ocean", "D. Pacific Ocean"],
+        "question": "In SQL, which command is used to retrieve data from a table?",
+        "choices": ["A. INSERT", "B. UPDATE", "C. DELETE", "D. SELECT"],
         "answer": "D"
     },
     {
-        "question": "What is the square root of 64?",
-        "choices": ["A. 6", "B. 7", "C. 8", "D. 9"],
+        "question": "What is the output of the following code snippet in Python? \n```python\nprint(2 ** 3)\n```",
+        "choices": ["A. 6", "B. 8", "C. 9", "D. 7"],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT a sorting algorithm?",
+        "choices": ["A. Quick Sort", "B. Bubble Sort", "C. Depth First Search", "D. Merge Sort"],
         "answer": "C"
     },
     {
-        "question": "Who wrote '1984'?",
-        "choices": ["A. George Orwell", "B. Aldous Huxley", "C. F. Scott Fitzgerald", "D. J.D. Salinger"],
+        "question": "Which SQL keyword is used to remove duplicate rows from a result set?",
+        "choices": ["A. DISTINCT", "B. UNIQUE", "C. DELETE", "D. FILTER"],
         "answer": "A"
     },
     {
-        "question": "What is the capital of Canada?",
-        "choices": ["A. Toronto", "B. Vancouver", "C. Ottawa", "D. Montreal"],
+        "question": "What does the following C++ code snippet do? \n```cpp\nint arr[5] = {1, 2, 3, 4, 5};\ncout << arr[3];\n```",
+        "choices": ["A. Prints 4", "B. Prints 5", "C. Prints 3", "D. Throws an error"],
+        "answer": "A"
+    },
+    {
+        "question": "Which data structure is commonly used to implement Dijkstra's algorithm?",
+        "choices": ["A. Binary Search Tree", "B. Graph", "C. Priority Queue", "D. Stack"],
         "answer": "C"
     },
     {
-        "question": "What is the hardest natural substance on Earth?",
-        "choices": ["A. Gold", "B. Iron", "C. Diamond", "D. Platinum"],
-        "answer": "C"
-    },
-    {
-        "question": "Who developed the theory of relativity?",
-        "choices": ["A. Isaac Newton", "B. Albert Einstein", "C. Galileo Galilei", "D. Nikola Tesla"],
-        "answer": "B"
-    },
-    {
-        "question": "What is the capital of Australia?",
-        "choices": ["A. Sydney", "B. Melbourne", "C. Canberra", "D. Brisbane"],
-        "answer": "C"
-    },
-    {
-        "question": "What is the largest mammal?",
-        "choices": ["A. Elephant", "B. Blue Whale", "C. Giraffe", "D. Hippopotamus"],
-        "answer": "B"
-    },
-    {
-        "question": "What is the main ingredient in guacamole?",
-        "choices": ["A. Tomato", "B. Onion", "C. Avocado", "D. Pepper"],
-        "answer": "C"
-    },
-    {
-        "question": "Who was the first president of the United States?",
-        "choices": ["A. Abraham Lincoln", "B. Thomas Jefferson", "C. George Washington", "D. John Adams"],
-        "answer": "C"
+        "question": "In Java, which keyword is used to create a subclass?",
+        "choices": ["A. extends", "B. implements", "C. inherits", "D. super"],
+        "answer": "A"
     }
 ]
+
 
 random.shuffle(questions)
 def main():
@@ -129,5 +80,5 @@ def main():
     
     print(f"Your score: {score}/5")
         
-if __name__ == "_main_":
+if __name__ == "__main__":
     main()
